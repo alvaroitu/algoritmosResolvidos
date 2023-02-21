@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    height: auto;
+    padding: 10px;    
+
+    a {
+        font-family: 'Times New Roman', Times, serif;                
+        color: white;
+    }
+
+    .active{        
+        border-color: white;
+        border-radius: 5px;
+        border-style: solid;
+        padding: 5px;
+        border-width: 1px;
+        
+    }    
+
+    &_image{
+        height: 60px;
+    }
+
+    #button{        
+        font-family: 'Times New Roman', Times, serif;                
+        color: white;
+        border: none;
+        background-color: #B0BEC5;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header{
+        display: none;
+
+    }
+    
+}

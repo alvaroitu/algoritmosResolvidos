@@ -1,16 +1,30 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+
+import { HeaderModule } from './header/header.module';
+import { ContatoModule } from './contato/contato.module';
+import { AlgoritmosResolvidosModule } from './algoritmos-resolvidos/algoritmos-resolvidos.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,        
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HeaderModule,
+    NgbModule,
+    ContatoModule,
+    AlgoritmosResolvidosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

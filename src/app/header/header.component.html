@@ -1,0 +1,10 @@
+<mat-toolbar color="accent" class="header mat-elevation-z8">
+    <img class="header_image" src="./assets/images/logo/AlvaroItuLogo.png">
+    <a routerLink='/' routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact:true}">Algoritmos Resolvidos</a>
+    <a routerLink='/java' routerLinkActive="active">Java</a>    
+    <a routerLink='/javascript' routerLinkActive="active">JavaScript</a>
+    <a routerLink='/linguagemC' routerLinkActive="active">Linguagem C</a>
+    <a routerLink='/python' routerLinkActive="active">Python</a>
+    <button id="button" (click)="openDialog()">Contato</button>
+</mat-toolbar>
