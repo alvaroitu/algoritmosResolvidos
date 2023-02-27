@@ -6,12 +6,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { AppComponent } from './app.component';
-
 import { HeaderModule } from './header/header.module';
 import { ContatoModule } from './contato/contato.module';
 import { AlgoritmosResolvidosModule } from './algoritmos-resolvidos/algoritmos-resolvidos.module';
+import { LinguagemCModule } from './linguagem-c/linguagem-c.module';
+import { PythonModule } from './python/python.module';
+import { JavaModule } from './java/java.module';
+import { JavascriptModule } from './javascript/javascript.module';
 
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,11 @@ import { AlgoritmosResolvidosModule } from './algoritmos-resolvidos/algoritmos-r
     HeaderModule,
     NgbModule,
     ContatoModule,
-    AlgoritmosResolvidosModule
+    AlgoritmosResolvidosModule,
+    LinguagemCModule,
+    PythonModule,
+    JavaModule,
+    JavascriptModule
   ],
   providers: [],
   bootstrap: [AppComponent]
