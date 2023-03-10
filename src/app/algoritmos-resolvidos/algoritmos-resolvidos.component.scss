@@ -1,11 +1,33 @@
 .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    &_column{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin-top: 10px; 
+    color: white; 
+    background-color: #424242;
+    
+    &_up{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+        &_left{
+            width: 45%;
+        }
+    
+        &_right{
+            width: 45%;
+        }
+    }
+
+    &_center{
+        margin-top: 10px;
+        text-align: center;
     }
 }
+.code{
+    color: white;
+}
+
+
+
