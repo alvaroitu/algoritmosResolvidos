@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AlgoritmosResolvidosComponent } from './algoritmos-resolvidos.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AlgoritmosResolvidosComponent } from './algoritmos-resolvidos.component
   ],
   imports: [
     CommonModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ]
 })
 export class AlgoritmosResolvidosModule { }

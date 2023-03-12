@@ -2,32 +2,83 @@
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
-    margin-top: 10px; 
     color: white; 
-    background-color: #424242;
+    background-color: #000;
+    display: flex;    
+    justify-content: center;
     
-    &_up{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        &_left{
-            width: 45%;
-        }
-    
-        &_right{
-            width: 45%;
-        }
-    }
-
-    &_center{
+    &_subcontent{
         margin-top: 10px;
-        text-align: center;
-    }
+        width: 80%;
+        
+        &_imageCover{
+            position: relative;
+            text-align: center;
+            font-size: xx-large;
+
+            img{
+                width: 100%;
+                filter: blur(5px);
+            }
+
+            #algoritmo{
+                
+                position: absolute;
+                top: 40%;
+                left: 40%;
+            }
+
+            #resolvidos{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+
+        &_text{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            
+    
+            &_left{
+                text-align: center;
+                width: 45%;
+            }
+        
+            &_right{
+                width: 45%;
+
+                .textPseudo{
+                    text-align: center;
+                }
+
+                .code{
+                    color: #fff;
+                    font-style: italic;
+                }
+
+
+            }
+        }
+    
+        &_imageFluxogram{
+            text-align: center;
+        }
+
+        &_botton{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+            border-top: solid;
+            border-width: 0.5px;
+        }
+    }    
 }
-.code{
-    color: white;
-}
+
+
 
 
 
